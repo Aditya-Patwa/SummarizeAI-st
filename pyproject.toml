@@ -17,6 +17,7 @@ beautifulsoup4 = "^4.12.3"
 langchain-chroma = "^0.1.2"
 protobuf = "==3.20.*"
 langchainhub = "^0.1.20"
+pysqlite3-binary = "^0.5.3"
 
 
 [build-system]

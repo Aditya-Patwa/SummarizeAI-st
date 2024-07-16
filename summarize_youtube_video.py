@@ -47,13 +47,13 @@ if st.session_state.youtube_video_summary:
     st.write(st.session_state.youtube_video_summary)
 
     st.write("###")
-    st.header("_Ask Doubt? Clear it._", divider='violet')
+    st.header("_Any Doubt? Clear it._", divider='violet')
     # Display chat messages from history on app rerun
     for message in st.session_state.youtube_video_messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("Ask Doubt? Clear it."):
+    if prompt := st.chat_input("Any Doubt? Clear it."):
         # Display user message in chat message container
         with st.chat_message("user"):
             st.markdown(prompt)
